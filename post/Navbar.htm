@@ -1,0 +1,42 @@
+<nav class="navbar navbar-inverse navbar-fixed-top w3-white w3-border-0 w3-card-2 "> 
+  <div class="container-fluid navbar-container w3-padding w3-teal">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle w3-border " data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <div class="w3-card-12">
+         <a class="navbar-brand  " href="../home.php">
+        <img src="../Logo/Logo1.png"  width="100%" style="margin-top: -10px;" /></a>
+       </div>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul  class="nav navbar-nav">
+          <li></li>
+         
+        </ul>
+       <ul class="nav navbar-nav navbar-right">
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle w3-black"
+               data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			  <span class="glyphicon glyphicon-user"></span>&nbsp; <?php echo $use_row['name']; ?>&nbsp;<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class="w3-text-black" href="Dashboard.php?id=<?php echo mt_rand(); ?>">
+                <span class="w3-badge  w3-padding-tiny"><span class="fa fa-caret-square-o-right"></span></span>&nbsp;Profile</a></li>
+                 <li><a class="w3-text-black" href="howitworks.php?id=<?php echo mt_rand(); ?>">
+                 <span class="w3-badge  w3-padding-tiny"><span class="fa fa-exclamation-circle"></span></span>&nbsp;Help</a></li>
+                 
+                <li><a class="w3-text-black" href="../logout.php?logout"><span class="w3-badge  w3-padding-tiny"><span class="glyphicon glyphicon-log-out"></span></span>&nbsp;Sign Out</a></li>
+                
+              </ul>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+    
+    
+</nav> 
